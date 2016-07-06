@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Form</title>
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="Scripts/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="Scripts/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Content/app.css">
+</head>
+
+<body>
+  
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+                <h1>Login Form</h1>
+                <form id="contactForm" action="" role="form">
+                    <legend>Login Form</legend>
+                    <div class="form-group">
+                        <label for="userName">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    </div>
+
+                    <div class="text-right">
+                        <a id="cancelButton" href="index.html" class="btn btn-warning">Cancel</a>
+                        <button id="sendButton" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- JavaScript Section -->
+    <script src="Scripts/lib/jquery/dist/jquery.min.js"></script>
+    <script src="Scripts/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="Scripts/app.js"></script>
+</body>
+
+</html>
