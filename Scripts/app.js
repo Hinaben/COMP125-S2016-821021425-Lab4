@@ -5,7 +5,7 @@
  * @date July 6, 2016
  * 
  * StudentID: 821021425
- * website: http://comp125-s2016-lab3.azurewebsites.net
+ * website: http://comp125-s2016-821021425-lab4.azurewebsites.net
  * @description This file is the main javascript file for the web site
  */
 
@@ -15,7 +15,7 @@
 
     //This is a User Class
     var User = (function () {
-        //constructor
+        //Constructor
         function User(userName, userPassword) {
             this.userName = userName;
             this.userPassword = userPassword;
@@ -44,15 +44,26 @@
     }());
     */
 
-    // print user object details to the console
+
+     /**
+     * This function Display User Informaiton on console 
+     * 
+     * @function printUserInfo
+     * @returns {void}
+     */    
     function printUserInfo(user) {
         console.log("User Name = " + user.userName);
         console.log("Password = " + user.userPassword);
         //console.log("UserName = " + user.getUserName());
         //console.log("Password = " + user.getUserPassword());
     }
-
-    function init(event) {
+     /**
+     * This is an event handler for the Login Form submit event
+     * 
+     * @function onFormSubmit
+     * @returns {void}
+     */
+    function onFormSubmit(event) {
         event.preventDefault();
         // get user details from the login form
         var userName = document.getElementById("userName");
@@ -67,7 +78,7 @@
     }
     // get the login form reference and add form event listener
     var loginForm = document.getElementById("loginForm");
-    loginForm.addEventListener("submit", init);
+    loginForm.addEventListener("submit", onFormSubmit);
 
 
 })();
