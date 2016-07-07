@@ -1,3 +1,2 @@
-# COMP125-Lab3
+# COMP125-Lab4
 
-## A project to demonstrate working with the Document Object Model (DOM) and DHML for COMP125 @ Centennial
