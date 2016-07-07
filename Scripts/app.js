@@ -52,6 +52,7 @@
      * @returns {void}
      */    
     function printUserInfo(user) {
+        console.log(user);        
         console.log("User Name = " + user.userName);
         console.log("Password = " + user.userPassword);
         //console.log("UserName = " + user.getUserName());
